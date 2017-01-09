@@ -33,4 +33,11 @@ integrations:
       on_start: always
       on_success: always
       on_failure: always
+    - integrationName: slackNotification      
+      type: slack
+      recipients: 
+          - "#slack_notifications
+      on_start: always
+      on_success: always
+      on_failure: always
   
