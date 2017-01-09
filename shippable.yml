@@ -10,7 +10,10 @@ php:
   #- 5.2
   #- 7.0
   - 7.1
-  
+env:
+  global:
+    - FOO="hi"
+
 before_script: 
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
@@ -20,6 +23,7 @@ script:
 
 after_success:
   - echo "success"
+  - echo $FOO
   
 after_failure:
   - echo "failure"
