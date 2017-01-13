@@ -28,3 +28,20 @@ after_success:
 after_failure:
   - echo "failure"
   
+integrations:		
+   notifications:		
+     - integrationName: email      		
+       type: email   		
+       recipients: 		
+           - mohit@shippable.com		
+       on_start: always		
+       on_success: always		
+       on_failure: always		
+     - integrationName: slack      		
+       type: slack		
+       recipients: 		
+           - "#slack_notifications"		
+       on_start: always		
+       on_success: always		
+       on_failure: always
+  
