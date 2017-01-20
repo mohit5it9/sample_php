@@ -25,7 +25,7 @@ before_script:
 after_success:
   - echo "success"
   - echo $FOO
-  - blah vlah
+  #
   
 after_failure:
   - echo "failure"
