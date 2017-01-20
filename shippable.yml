@@ -45,4 +45,14 @@ integrations:
        on_start: always		
        on_success: always		
        on_failure: always
+
+    - integrationName: hipchat
+      type: hipchat
+      recipients:
+        - '#Ship-aye'
+        - '@Ship-aye'
+      on_start: always
+      on_success: always
+      on_failure: always
+      on_pull_request: always   
   
