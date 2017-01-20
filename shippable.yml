@@ -14,7 +14,6 @@ php:
 env:
   global:
     - FOO1="hi"
-    bkah n
 
 before_script: 
   - mkdir -p shippable/codecoverage
@@ -26,6 +25,7 @@ before_script:
 after_success:
   - echo "success"
   - echo $FOO
+  - blah vlah
   
 after_failure:
   - echo "failure"
