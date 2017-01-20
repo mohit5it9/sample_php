@@ -49,7 +49,7 @@ integrations:
        type: hipchat
        recipients:
          - '#Ship-aye'
-         - '@Ship-aye'
+         - '@ankul'
        on_start: always
        on_success: always
        on_failure: always
