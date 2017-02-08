@@ -30,36 +30,36 @@ after_success:
 after_failure:
   - echo "failure"
   
-integrations:		
-   notifications:		
-     - integrationName: email      		
-       type: email   		
-       recipients: 		
-           - mohit@shippable.com		
-       on_start: always		
-       on_success: always		
-       on_failure: always		
-     - integrationName: slack      		
-       type: slack		
-       recipients: 		
-           - "#slack_notifications"		
-       on_start: always		
-       on_success: always		
-       on_failure: always
-     - integrationName: hipchat
-       type: hipchat
-       recipients:
-         - '#Ship-aye'
-       on_start: always
-       on_success: always
-       on_failure: always
-       on_pull_request: always
-     - integrationName: irc
-       type: irc
-       recipients:
-         - "chat.freenode.net#test-cock1"
-       on_start: always
-       on_success: always
-       on_failure: always
-       on_pull_request: always
+#integrations:		
+#   notifications:		
+#     - integrationName: email      		
+#       type: email   		
+#       recipients: 		
+#           - mohit@shippable.com		
+#       on_start: always		
+#       on_success: always		
+#       on_failure: always		
+#     - integrationName: slack      		
+#       type: slack		
+#       recipients: 		
+#           - "#slack_notifications"		
+#       on_start: always		
+#       on_success: always		
+#       on_failure: always
+#     - integrationName: hipchat
+#       type: hipchat
+#       recipients:
+#         - '#Ship-aye'
+#       on_start: always
+#       on_success: always
+#       on_failure: always
+#       on_pull_request: always
+#     - integrationName: irc
+#       type: irc
+#       recipients:
+#         - "chat.freenode.net#test-cock1"
+#       on_start: always
+#       on_success: always
+#       on_failure: always
+#       on_pull_request: always
   
