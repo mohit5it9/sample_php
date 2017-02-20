@@ -18,6 +18,10 @@ env:
 before_script: 
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
+  
+  
+ci:
+  - echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/box-sn.env
 
 #script:
 #   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
