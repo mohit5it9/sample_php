@@ -22,6 +22,7 @@ before_script:
 build:
    ci:
     - echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/box-sn.env
+    - echo "versionName=latest" >> $JOB_STATE/box-sn.env
 
 #script:
 #   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
