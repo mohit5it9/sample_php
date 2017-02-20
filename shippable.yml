@@ -21,7 +21,7 @@ before_script:
   
 build:
    ci:
-    - echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/box-sn.env
+    #- echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/box-sn.env
     - echo "versionName=latest" >> $JOB_STATE/box-sn.env
 
 #script:
