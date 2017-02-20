@@ -19,7 +19,6 @@ before_script:
   - mkdir -p shippable/codecoverage
   - mkdir -p shippable/testresults
   
-  
 ci:
   - echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/box-sn.env
 
