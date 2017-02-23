@@ -33,7 +33,7 @@ after_success:
   
 after_failure:
   - echo "failure"
-  
+
 integrations:		
    notifications:		
      - integrationName: email      		
