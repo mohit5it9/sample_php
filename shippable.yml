@@ -50,6 +50,9 @@ integrations:
        on_start: always		
        on_success: always		
        on_failure: always
+       branches: #Testing the wildcards for branches exclude
+        except:
+          - master
 #     - integrationName: hipchat
 #       type: hipchat
 #       recipients:
