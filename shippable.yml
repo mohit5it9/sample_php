@@ -52,7 +52,7 @@ integrations:
        on_failure: always
        branches: #Testing the wildcards for branches exclude
         except:
-          - master
+          - heroku
 #     - integrationName: hipchat
 #       type: hipchat
 #       recipients:
