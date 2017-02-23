@@ -1,4 +1,4 @@
-language: php
+language: phps
 
 php: 
   #- 5.3
