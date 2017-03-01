@@ -14,7 +14,6 @@ php:
 env:
   global:
     - FOO1="hi"
-    - FOO2="hello"
 
 before_script: 
   - mkdir -p shippable/codecoverage
