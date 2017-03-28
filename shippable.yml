@@ -12,7 +12,7 @@ php:
   - 7.1
  
 env:
-  global:
+  matrix:
     - FOO1="hi"
     - FOO2="second"
     - FOO3="third"
