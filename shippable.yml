@@ -59,8 +59,8 @@ integrations:
        branches: #Testing the wildcards for branches exclude
         except:
           - heroku
-     - integrationName: key-value      		
-       type: generic      
+  generic:
+    - integrationName: "key-value"
 #     - integrationName: hipchat
 #       type: hipchat
 #       recipients:
