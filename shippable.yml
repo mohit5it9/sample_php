@@ -1,22 +1,22 @@
 language: php
 
 php: 
-  - 5.3
-  - 5.4
-  - 5.5
-  - 5.6
-  - 5.0
-  - 5.1
-  - 5.2
-  - 7.0
+  #- 5.3
+  #- 5.4
+  #- 5.5
+  #- 5.6
+  #- 5.0
+  #- 5.1
+  #- 5.2
+  #- 7.0
   - 7.1
  
 env:
-  matrix:
+  gloabl:
     - FOO1="hi"
-    - FOO2="second"
-    - FOO3="third"
-    - FOO4="fourth"
+    #- FOO2="second"
+    #- FOO3="third"
+    #- FOO4="fourth"
 
 before_script: 
   - mkdir -p shippable/codecoverage
@@ -26,6 +26,7 @@ build:
    ci:
     #- echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/box-sn.env
     - echo "versionName=stable" >> $JOB_STATE/box-sn.env
+    - echo "api_key"
 
 #script:
 #   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
