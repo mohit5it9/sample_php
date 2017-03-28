@@ -27,6 +27,8 @@ build:
     #- echo "versionName=$BRANCH.$BUILD_NUMBER" >> $JOB_STATE/box-sn.env
     - echo "versionName=stable" >> $JOB_STATE/box-sn.env
     - echo "api_key"
+    - echo $api_key
+    - echo $api_port
 
 #script:
 #   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
