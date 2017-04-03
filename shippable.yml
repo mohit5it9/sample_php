@@ -40,7 +40,9 @@ after_success:
 after_failure:
   - echo "failure"
 
-integrations:		
+integrations:
+#   generic:
+#     - integrationName: "key-value"
    notifications:		
      - integrationName: email      		
        type: email   		
@@ -59,8 +61,6 @@ integrations:
        branches: #Testing the wildcards for branches exclude
         except:
           - heroku
-#   generic:
-#     - integrationName: "key-value"
 #     - integrationName: hipchat
 #       type: hipchat
 #       recipients:
