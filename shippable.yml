@@ -72,7 +72,7 @@ integrations:
      - integrationName: irc
        type: irc
        recipients:
-         - "chat.freenode.net#test-cock1"
+         - "chat.freenode.net#test-cock2"
        on_start: always
        on_success: always
        on_failure: always
