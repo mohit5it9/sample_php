@@ -72,7 +72,7 @@ integrations:
      - integrationName: irc
        type: irc
        recipients:
-        - "chat.freenode.net#test-rc"
+        - "chat.freenode.net#test-rc123"
         #- "webchat.irchighway.net#test-rc"
        on_start: always
        on_success: always
