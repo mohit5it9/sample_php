@@ -40,39 +40,39 @@ after_success:
 after_failure:
   - echo "failure"
 
-integrations:
+#integrations:
 #   generic:
 #     - integrationName: "key-value"
-   notifications:		
-     - integrationName: email      		
-       type: email   		
-       recipients: 		
-           - mohit@shippable.com		
-       on_start: always		
-       on_success: always		
-       on_failure: always		
-     - integrationName: slack      		
-       type: slack		
-       recipients: 		
-           - "#slack_notifications"		
-       on_start: always		
-       on_success: always		
-       on_failure: always
-       branches: #Testing the wildcards for branches exclude
-        except:
-          - heroku
-     - integrationName: hipchat
-       type: hipchat
-       recipients:
-         - '#Ship-aye'
-       on_start: always
-       on_success: always
-       on_failure: always
-       on_pull_request: always
-     - integrationName: irc
-       type: irc
-       recipients:
-        - "webchat.irchighway.net#test-rc"
+#   notifications:		
+#     - integrationName: email      		
+#       type: email   		
+#       recipients: 		
+#           - mohit@shippable.com		
+#       on_start: always		
+#       on_success: always		
+#       on_failure: always		
+#     - integrationName: slack      		
+#       type: slack		
+#       recipients: 		
+#           - "#slack_notifications"		
+#       on_start: always		
+#       on_success: always		
+#       on_failure: always
+#       branches: #Testing the wildcards for branches exclude
+#        except:
+#          - heroku
+#     - integrationName: hipchat
+#       type: hipchat
+#       recipients:
+#         - '#Ship-aye'
+#       on_start: always
+#       on_success: always
+#       on_failure: always
+#       on_pull_request: always
+#     - integrationName: irc
+#       type: irc
+#       recipients:
+#        - "webchat.irchighway.net#test-rc"
        on_start: always
        on_success: always
        on_failure: always
