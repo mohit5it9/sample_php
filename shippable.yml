@@ -73,8 +73,8 @@ after_failure:
 #       type: irc
 #       recipients:
 #        - "webchat.irchighway.net#test-rc"
-       on_start: always
-       on_success: always
-       on_failure: always
-       on_pull_request: always
+#       on_start: always
+#       on_success: always
+#       on_failure: always
+#       on_pull_request: always
  
