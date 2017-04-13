@@ -30,7 +30,7 @@ build:
     - echo $api_key
     - echo $api_port
    on_success:
-    - echo $foor
+    - echo $foor'
 
 #script:
 #   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
