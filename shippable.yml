@@ -14,7 +14,7 @@ php:
 env:
   gloabl:
     - FOO1="hi"
-    - FOO2="second"
+    #- FOO2="second"
     #- FOO3="third"
     #- FOO4="fourth"
 
