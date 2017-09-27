@@ -42,7 +42,7 @@ after_failure:
 
 integrations:
   key:
-    - integrationName: pemkey-1
+    - integrationName: pemkey1
       type: pem-key
 #   generic:
 #     - integrationName: "key-value"
