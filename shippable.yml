@@ -40,7 +40,10 @@ after_success:
 after_failure:
   - echo "failure"
 
-#integrations:
+integrations:
+  key:
+    - integrationName: prod-ssh-int
+      type: sshKeys
 #   generic:
 #     - integrationName: "key-value"
 #   notifications:		
