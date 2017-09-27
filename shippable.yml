@@ -42,8 +42,8 @@ after_failure:
 
 integrations:
   key:
-    - integrationName: pemkey1
-      type: pem-key
+    - integrationName: sshkey
+      type: ssh-key
 #   generic:
 #     - integrationName: "key-value"
 #   notifications:		
